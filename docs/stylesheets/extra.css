@@ -1,0 +1,74 @@
+/* Colours from Nav-ERP's design foundation (dev/apps/web/styles/tokens.css):
+   calm and monochrome, with the green accent reserved for the active
+   navigation, buttons and links. */
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #ffffff;
+  --md-primary-fg-color--light: #f6f7f9;
+  --md-primary-fg-color--dark: #e7eaef;
+  --md-primary-bg-color: #1c2026;
+  --md-primary-bg-color--light: #5c6470;
+
+  --md-accent-fg-color: #4a9e77;
+  --md-accent-fg-color--transparent: rgba(74, 158, 119, 0.1);
+
+  --md-default-bg-color: #ffffff;
+  --md-typeset-color: #1c2026;
+  /* Darker green for links: #4a9e77 is too light for body text on white. */
+  --md-typeset-a-color: #2f7d57;
+
+  --nav-erp-border: #e7eaef;
+  --nav-erp-heading: #4a9e77;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 220;
+  --md-primary-fg-color: #1b1e24;
+  --md-primary-fg-color--light: #22262e;
+  --md-primary-fg-color--dark: #15171b;
+  --md-primary-bg-color: #edeef1;
+  --md-primary-bg-color--light: #a8aeb8;
+
+  --md-accent-fg-color: #48c58c;
+  --md-accent-fg-color--transparent: rgba(72, 197, 140, 0.1);
+
+  --md-default-bg-color: #15171b;
+  --md-typeset-color: #edeef1;
+  --md-typeset-a-color: #48c58c;
+
+  --nav-erp-border: #2a2e37;
+  --nav-erp-heading: #48c58c;
+}
+
+/* Light header separated by a hairline instead of a coloured bar. */
+.md-header {
+  border-bottom: 1px solid var(--nav-erp-border);
+  box-shadow: none;
+}
+
+.md-header[data-md-state="shadow"] {
+  box-shadow: none;
+}
+
+/* Section headings in the accent green, as in Nav-ERP. */
+.md-typeset h2 {
+  color: var(--nav-erp-heading);
+}
+
+.md-nav__link--active {
+  color: var(--md-accent-fg-color);
+}
+
+/* Page titles in the primary text colour rather than Material's light grey. */
+.md-typeset h1 {
+  color: var(--md-typeset-color);
+}
+
+/* Quiet search field, like Nav-ERP's inputs. */
+[data-md-color-scheme="default"] .md-search__form {
+  background-color: #f1f3f6;
+}
+
+[data-md-color-scheme="slate"] .md-search__form {
+  background-color: #20242b;
+}
