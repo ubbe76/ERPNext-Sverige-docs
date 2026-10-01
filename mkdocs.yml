@@ -1,0 +1,51 @@
+site_name: ERPNext Sverige – manual
+site_description: Användarmanual för ERPNext Sverige och HRMS Sverige
+site_url: https://ubbe76.github.io/ERPNext-Sverige-docs/
+repo_url: https://github.com/ubbe76/ERPNext-Sverige-docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: sv
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Mörkt läge
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Ljust läge
+
+plugins:
+  - search:
+      lang: sv
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.keys
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Kom igång: index.md
+  - Installation: installation.md
+  - Bokföring och moms: bokforing/index.md
+  - Fakturering: fakturering/index.md
+  - Betalningar: betalningar/index.md
+  - Frakt: frakt/index.md
+  - Personal: personal/index.md
+  - Årsrutiner: arsrutiner.md
