@@ -1,13 +1,13 @@
 /* Colours from Nav-ERP's design foundation (dev/apps/web/styles/tokens.css):
-   calm and monochrome, with the green accent reserved for the active
-   navigation, buttons and links. */
+   a dark green header (the logo's #1f7a50, dark enough for white text),
+   a pale green navigation and the green accent for links and headings. */
 
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #ffffff;
-  --md-primary-fg-color--light: #f6f7f9;
-  --md-primary-fg-color--dark: #e7eaef;
-  --md-primary-bg-color: #1c2026;
-  --md-primary-bg-color--light: #5c6470;
+  --md-primary-fg-color: #1f7a50;
+  --md-primary-fg-color--light: #2e9e6b;
+  --md-primary-fg-color--dark: #17603f;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.75);
 
   --md-accent-fg-color: #4a9e77;
   --md-accent-fg-color--transparent: rgba(74, 158, 119, 0.1);
@@ -17,15 +17,19 @@
   /* Darker green for links: #4a9e77 is too light for body text on white. */
   --md-typeset-a-color: #2f7d57;
 
-  --nav-erp-border: #e7eaef;
   --nav-erp-heading: #4a9e77;
+  --nav-erp-nav-bg: #e9f4ee;
+  --nav-erp-nav-border: #cfe6d9;
+  --nav-erp-nav-text: #1c2026;
+  --nav-erp-nav-active: #1f7a50;
+  --nav-erp-nav-active-bg: #d3eadd;
 }
 
 [data-md-color-scheme="slate"] {
   --md-hue: 220;
-  --md-primary-fg-color: #1b1e24;
-  --md-primary-fg-color--light: #22262e;
-  --md-primary-fg-color--dark: #15171b;
+  --md-primary-fg-color: #17402d;
+  --md-primary-fg-color--light: #1f5a3f;
+  --md-primary-fg-color--dark: #102e20;
   --md-primary-bg-color: #edeef1;
   --md-primary-bg-color--light: #a8aeb8;
 
@@ -36,18 +40,63 @@
   --md-typeset-color: #edeef1;
   --md-typeset-a-color: #48c58c;
 
-  --nav-erp-border: #2a2e37;
   --nav-erp-heading: #48c58c;
+  --nav-erp-nav-bg: #17241d;
+  --nav-erp-nav-border: #22362b;
+  --nav-erp-nav-text: #edeef1;
+  --nav-erp-nav-active: #48c58c;
+  --nav-erp-nav-active-bg: #1d3327;
 }
 
-/* Light header separated by a hairline instead of a coloured bar. */
-.md-header {
-  border-bottom: 1px solid var(--nav-erp-border);
-  box-shadow: none;
-}
-
+.md-header,
 .md-header[data-md-state="shadow"] {
   box-shadow: none;
+}
+
+/* Search field: translucent white on the green header. */
+.md-search__form {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.md-search__form:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+}
+
+.md-search__input,
+.md-search__input::placeholder,
+.md-search__icon {
+  color: var(--md-primary-bg-color);
+}
+
+/* Pale green navigation column on wide screens. */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    background-color: var(--nav-erp-nav-bg);
+    border: 1px solid var(--nav-erp-nav-border);
+    border-radius: 14px;
+    padding: 0.4rem 0;
+  }
+
+  .md-sidebar--primary .md-nav__title {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .md-sidebar--primary .md-nav__link,
+  .md-sidebar--primary .md-nav__title {
+    color: var(--nav-erp-nav-text);
+  }
+
+  .md-sidebar--primary .md-nav__link--active {
+    color: var(--nav-erp-nav-active);
+    background-color: var(--nav-erp-nav-active-bg);
+    border-radius: 6px;
+    font-weight: 600;
+  }
+
+  .md-sidebar--primary .md-nav__link:hover {
+    color: var(--nav-erp-nav-active);
+  }
 }
 
 /* Section headings in the accent green, as in Nav-ERP. */
@@ -55,20 +104,7 @@
   color: var(--nav-erp-heading);
 }
 
-.md-nav__link--active {
-  color: var(--md-accent-fg-color);
-}
-
 /* Page titles in the primary text colour rather than Material's light grey. */
 .md-typeset h1 {
   color: var(--md-typeset-color);
-}
-
-/* Quiet search field, like Nav-ERP's inputs. */
-[data-md-color-scheme="default"] .md-search__form {
-  background-color: #f1f3f6;
-}
-
-[data-md-color-scheme="slate"] .md-search__form {
-  background-color: #20242b;
 }
