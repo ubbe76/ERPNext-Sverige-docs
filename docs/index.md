@@ -20,4 +20,7 @@ Apparna är fristående. Du kan installera den ena, den andra eller båda.
 ## Innan du börjar
 
 - Välj språket **Svenska (sv)** under dina användarinställningar. Annars syns inte de svenska texterna.
-- Ladda om sidan med ++ctrl+shift+r++ efter att apparna har installerats eller uppdaterats.
+- Ladda om sidan utan webbläsarens cache efter att apparna har installerats eller uppdaterats. Annars
+  kan webbläsaren visa gamla menyer och texter.
+    - **Windows:** ++ctrl+f5++ eller ++ctrl+shift+r++ (Chrome, Edge och Firefox).
+    - **Mac:** ++cmd+shift+r++ i Chrome, Edge och Firefox, och ++cmd+option+r++ i Safari.
