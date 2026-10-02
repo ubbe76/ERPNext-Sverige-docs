@@ -31,3 +31,9 @@ bench --site <site> clear-cache
 Helgdagslistor ("Sverige ÅÅÅÅ") och frånvaroperioder för i år och nästa år skapas automatiskt när
 installationsguiden är klar. Fanns företaget redan när appen installerades skapas de direkt. Se annars
 [Årsrutiner](arsrutiner.md).
+
+## Backup
+
+ERPNext Sverige har ett script som varje natt tar en krypterad backup och laddar upp den till molnlagring
+(till exempel Google Drive, OneDrive eller Backblaze B2). Dagliga kopior sparas i 30 dagar och månadskopior i
+8 år. Inställningen beskrivs i appens README under **Backup och arkivering**. Se även [Årsrutiner](arsrutiner.md).
