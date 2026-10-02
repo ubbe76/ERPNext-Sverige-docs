@@ -26,11 +26,26 @@ Filen innehåller den godkända frånvaron för en månad. Arbetad tid och till�
 3. Alla anställda behöver ett schema i Crona. Frånvaron skickas som procent av schemat, och Crona räknar
    timmarna och karensavdraget.
 
+## Timavlönade
+
+Sätt **Löneform** till *Timlön* på anställda med timlön. För dem skickas:
+
+- **arbetad tid** som tidkod **ARB**, en rad per dag med de timmar som närvaron visar. Närvaron räknas fram av
+  HRMS från in- och utstämplingarna mot skiftet;
+- **frånvaro** i timmar per dag de var schemalagda (skifttilldelning eller standardskift). Helgdagar och dagar
+  utan skift räknas inte, och en halvdag ger halva skiftet.
+
+Timavlönade behöver alltså inget schema i Crona. Koppla **ARB** till lönearten för timlön under
+**Register > Löneartsstyrning**, och kontrollera att frånvarokoderna har lönearter för timavlönade.
+
+Godkännandet stoppas om en timavlönad har stämplingar som inte blivit närvaro, till exempel en saknad
+utstämpling. Rätta stämplingen eller markera närvaron för dagen, och hämta sedan frånvaro och tid igen.
+
 ## Varje månad
 
 1. Sök efter **Löneunderlag** i sökfältet och skapa ett nytt. Förra månaden är förvald; välj bolag.
-2. Klicka på **Hämta frånvaro**. Alla godkända ledighetsansökningar i månaden blir rader. En halvdag blir en
-   egen rad med 50 %.
+2. Klicka på **Hämta frånvaro och tid**. Godkänd frånvaro och timavlönades arbetade tid i månaden blir rader.
+   För månadsavlönade blir en halvdag en egen rad med 50 %.
 3. Granska raderna och **godkänn** löneunderlaget.
 4. Klicka på **Ladda ner PAXml** och läs in filen i Crona under **Lön > Importera löneunderlag**.
 
