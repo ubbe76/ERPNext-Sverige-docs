@@ -56,6 +56,8 @@ nav:
   - Fakturering: fakturering/index.md
   - Betalningar: betalningar/index.md
   - Frakt: frakt/index.md
-  - Personal: personal/index.md
+  - Personal:
+      - personal/index.md
+      - Löneunderlag till Crona: personal/loneunderlag.md
   - Årsrutiner: arsrutiner.md
   - Systemdokumentation: systemdokumentation.md
