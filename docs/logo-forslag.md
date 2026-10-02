@@ -2,32 +2,29 @@
 
 Tillfällig sida för att välja logotyp. Den finns inte i menyn och tas bort när ett förslag är valt.
 
-## A – Solfjäder
+Navet är detsamma som i Nav-ERP, och ordbilden är byggd på samma sätt (typsnittet Poppins, grönt streck,
+mindre text i grått).
 
-Nav-ERP:s nav med de tre övre ekrarna, som solljus eller uppslagna sidor.
+## 1 – SVERIGE i spärrade versaler (som ERP i Nav-ERP)
 
-<div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap">
-<div style="background:#1f7a50;border-radius:8px;padding:12px 18px;display:flex;align-items:center;gap:12px"><img src="../assets/logo-forslag/a-light.svg" alt="" style="height:30px"><span style="color:#fff;font-weight:600;font-size:18px">ERPNext Sverige – manual</span></div>
-<img src="../assets/logo-forslag/a-green.svg" alt="A – Solfjäder" style="height:96px">
-<img src="../assets/logo-forslag/a-green.svg" alt="" style="height:16px">
+<div style="display:flex;flex-wrap:wrap;gap:0">
+<div style="background:#fff;padding:20px;border:1px solid #e7eaef"><img src="../assets/logo-forslag/logo-versaler.svg" alt="Förslag 1, ljus bakgrund" style="height:90px"></div>
+<div style="background:#15171b;padding:20px"><img src="../assets/logo-forslag/logo-versaler-dark.svg" alt="Förslag 1, mörk bakgrund" style="height:90px"></div>
 </div>
 
-## B – Uppslagen bok
+## 2 – Sverige med gemener
 
-Två sidor som fäller ut från bokryggen.
-
-<div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap">
-<div style="background:#1f7a50;border-radius:8px;padding:12px 18px;display:flex;align-items:center;gap:12px"><img src="../assets/logo-forslag/b-light.svg" alt="" style="height:30px"><span style="color:#fff;font-weight:600;font-size:18px">ERPNext Sverige – manual</span></div>
-<img src="../assets/logo-forslag/b-green.svg" alt="B – Uppslagen bok" style="height:96px">
-<img src="../assets/logo-forslag/b-green.svg" alt="" style="height:16px">
+<div style="display:flex;flex-wrap:wrap;gap:0">
+<div style="background:#fff;padding:20px;border:1px solid #e7eaef"><img src="../assets/logo-forslag/logo-gemener.svg" alt="Förslag 2, ljus bakgrund" style="height:90px"></div>
+<div style="background:#15171b;padding:20px"><img src="../assets/logo-forslag/logo-gemener-dark.svg" alt="Förslag 2, mörk bakgrund" style="height:90px"></div>
 </div>
 
-## C – Kompass
+## Symbolen
 
-Fyra ekrar runt pricken, som en vägvisare.
+I rubrikraden (vit), i stort format och som flikikon:
 
 <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap">
-<div style="background:#1f7a50;border-radius:8px;padding:12px 18px;display:flex;align-items:center;gap:12px"><img src="../assets/logo-forslag/c-light.svg" alt="" style="height:30px"><span style="color:#fff;font-weight:600;font-size:18px">ERPNext Sverige – manual</span></div>
-<img src="../assets/logo-forslag/c-green.svg" alt="C – Kompass" style="height:96px">
-<img src="../assets/logo-forslag/c-green.svg" alt="" style="height:16px">
+<div style="background:#1f7a50;border-radius:8px;padding:12px 18px;display:flex;align-items:center;gap:12px"><img src="../assets/logo-forslag/symbol-header.svg" alt="" style="height:30px"><span style="color:#fff;font-weight:600;font-size:18px">ERPNext Sverige – manual</span></div>
+<img src="../assets/logo-forslag/symbol.svg" alt="Symbolen" style="height:96px">
+<img src="../assets/logo-forslag/symbol.svg" alt="" style="height:16px">
 </div>
