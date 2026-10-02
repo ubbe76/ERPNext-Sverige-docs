@@ -1,5 +1,10 @@
 # Personal
 
+![HRMS Sverige](../assets/logo/hrms-sverige.svg#only-light){ width="320" }
+![HRMS Sverige](../assets/logo/hrms-sverige-dark.svg#only-dark){ width="320" }
+
+Avsnittet gäller appen **HRMS Sverige**.
+
 ## Anställda och personnummer
 
 Den anställde har fälten **Personnummer**, **Arbetsdagar per vecka** och **Sysselsättningsgrad**.
