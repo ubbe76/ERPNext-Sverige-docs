@@ -41,6 +41,41 @@ Timavlönade behöver alltså inget schema i Crona. Koppla **ARB** till löneart
 Godkännandet stoppas om en timavlönad har stämplingar som inte blivit närvaro, till exempel en saknad
 utstämpling. Rätta stämplingen eller markera närvaron för dagen, och hämta sedan frånvaro och tid igen.
 
+## Övertid, mertid och OB
+
+Övertid, mertid och OB räknas ur närvarons in- och utstämplingstid, för alla som stämplar.
+
+**Ställ in reglerna** under **Löneinställningar**:
+
+- **Heltid per dag** (standard 8 timmar) är gränsen för mertid.
+- **Tidsregler**: varje rad har typ (OB eller Övertid), nivå 1–5, dagar och klockslag. Till före Från går över
+  midnatt, och Från = Till betyder hela dygnet. *Helgdag* är röda dagar i helglistan. Där regler överlappar gäller
+  den högsta nivån.
+
+| Typ | Nivå | Dagar | Från | Till |
+|---|---|---|---|---|
+| OB | 1 | mån–fre | 18:00 | 22:00 |
+| OB | 2 | alla dagar | 22:00 | 06:00 |
+| OB | 3 | lör, sön, helgdag | 00:00 | 00:00 |
+| Övertid | 1 | mån–fre | 06:00 | 20:00 |
+| Övertid | 2 | alla dagar och helgdag | 20:00 | 06:00 |
+
+**Så räknas det per dag:**
+
+- Tid utanför det planerade skiftet är extra tid. Utan skift blir det ingen extra tid, bara OB.
+- Deltidsanställda får **MER** tills dagens arbetade tid når heltid; resten blir övertid.
+- Övertiden delas efter övertidsreglerna och blir **ÖT** (pengar) eller **ÖK** (komptid). Valet görs vid
+  utstämplingen (*Övertidsersättning*), annars gäller den anställdes *Övertid som*.
+- **OB** räknas på hela passet.
+
+HR kan ändra koden på en rad i löneunderlaget (till exempel ÖT1 till ÖK1) eller ta bort övertid som inte var
+beordrad, innan underlaget godkänns. Närvaro utan stämplingstider ger en varning, eftersom där inte går att räkna
+övertid eller OB.
+
+**I Crona:** koppla MER, ÖT1–ÖT5, ÖK1–ÖK5 och OB1–OB5 under **Register > Löneartsstyrning**. För timavlönade
+dras MER- och övertidstimmarna från ARB, så lönearterna för MER och ÖT ska omfatta hela timlönen plus tillägget.
+OB är ett rent tillägg.
+
 ## Varje månad
 
 1. Sök efter **Löneunderlag** i sökfältet och skapa ett nytt. Förra månaden är förvald; välj bolag.
