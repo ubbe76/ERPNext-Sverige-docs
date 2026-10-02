@@ -62,7 +62,10 @@ utstämpling. Rätta stämplingen eller markera närvaron för dagen, och hämta
 
 **Så räknas det per dag:**
 
-- Tid utanför det planerade skiftet är extra tid. Utan skift blir det ingen extra tid, bara OB.
+- Tid utanför det planerade skiftet är extra tid. Raster mellan stämplingarna räknas inte.
+- **Utan planerat skift blir det ingen övertid, bara OB.** Det gäller även helger och röda dagar i helglistan:
+  ett extrapass på en lördag utan skift ger OB men ingen övertid. Ska passet ersättas som övertid, lägg till
+  raden för hand i löneunderlaget, eller lägg in ett skift för dagen innan frånvaro och tid hämtas.
 - Deltidsanställda får **MER** tills dagens arbetade tid når heltid; resten blir övertid.
 - Övertiden delas efter övertidsreglerna och blir **ÖT** (pengar) eller **ÖK** (komptid). Valet görs vid
   utstämplingen (*Övertidsersättning*), annars gäller den anställdes *Övertid som*.
