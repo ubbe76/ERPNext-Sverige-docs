@@ -1,5 +1,8 @@
 # Kom igång
 
+![ERPNext Sverige](assets/logo/erpnext-sverige.svg#only-light){ width="420" }
+![ERPNext Sverige](assets/logo/erpnext-sverige-dark.svg#only-dark){ width="420" }
+
 Den här manualen beskriver två tillägg som anpassar [ERPNext](https://erpnext.com) version 16 för svenska
 företag:
 

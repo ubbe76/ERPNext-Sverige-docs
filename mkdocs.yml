@@ -7,6 +7,8 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: sv
+  logo: assets/logo/symbol-header.svg
+  favicon: assets/logo/symbol.svg
   features:
     - navigation.sections
     - navigation.indexes
