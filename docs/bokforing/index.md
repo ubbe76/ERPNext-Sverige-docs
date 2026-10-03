@@ -66,7 +66,7 @@ Skatteverket avvisar en fil för en period som bolaget inte redovisar.
 - **Ladda ner eSKD-fil** ger en fil för Skatteverkets e-tjänst "Lämna momsdeklaration". Ladda upp den där,
   kontrollera uppgifterna och signera. Organisationsnumret hämtas från bolagets **Tax ID** och skrivs som
   xxxxxx-xxxx, som Skatteverket kräver.
-- **Skapa momsomföring** skapar en journalpost som utkast som nollställer momskontona mot 2650. Granska och
+- **Skapa momsomföring** skapar en verifikation som utkast som nollställer momskontona mot 2650. Granska och
   bokför den själv.
 
 Rutorna 06, 07, 08, 37 och 38 stöds inte än och är alltid 0.

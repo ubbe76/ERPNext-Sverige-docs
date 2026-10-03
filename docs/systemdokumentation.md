@@ -30,15 +30,15 @@ läggs till av grunduppsättningen.
 
 | Affärshändelse | Dokument | Nummerserie |
 |---|---|---|
-| Kundfaktura, kreditfaktura | Försäljningsfaktura | **Fakturanummer** ÅÅÅÅ-NNNN utan luckor, sätts vid bokföring (internt id ACC-SINV-…) |
-| Leverantörsfaktura | Inköpsfaktura | ACC-PINV-ÅÅÅÅ-… |
+| Kundfaktura, kreditfaktura | Kundfaktura | **Fakturanummer** ÅÅÅÅ-NNNN utan luckor, sätts vid bokföring (internt id ACC-SINV-…) |
+| Leverantörsfaktura | Leverantörsfaktura | ACC-PINV-ÅÅÅÅ-… |
 | Betalningar | Betalningspost | ACC-PAY-ÅÅÅÅ-… |
-| Övriga verifikationer | Journalpost | ACC-JV-ÅÅÅÅ-… |
-| Lagerhändelser | Lagerpost, följesedel, inköpskvitto | MAT-… |
+| Övriga verifikationer | Verifikation | ACC-JV-ÅÅÅÅ-… |
+| Lagerhändelser | Lagerpost, följesedel, inleverans | MAT-… |
 
 ERPNext ger interna id redan till utkast. Ett raderat utkast lämnar därför en lucka i det interna id:t men
 aldrig i fakturanumret. Utkast är inte bokförda och ingår inte i bokföringen. I SIE-exporten numreras
-verifikationerna utan luckor i serierna A (journalposter), B (kundfakturor), C (leverantörsfakturor),
+verifikationerna utan luckor i serierna A (verifikationer), B (kundfakturor), C (leverantörsfakturor),
 D (betalningar), E (lager) och F (övrigt).
 
 **Verifikationens innehåll.** Varje dokument har datum för affärshändelsen (bokföringsdatum), datum och tid för
@@ -48,8 +48,7 @@ bifogas dokumentet.
 ## Löpande bokföring
 
 - **Grundbok** (registreringsordning): rapporten [Grundbok](bokforing/index.md) under *Svensk bokföring*.
-- **Huvudbok** (systematisk ordning): ERPNext:s rapporter *Bokföringsregister* (huvudboken, per konto) och
-  *Provsaldo*.
+- **Huvudbok** (systematisk ordning): ERPNext:s rapporter *Huvudbok* (per konto) och *Saldobalans*.
 - **Kontoval och moms** sker automatiskt utifrån kundens eller leverantörens momskategori och artikelns
   momssats, se [Bokföring och moms](bokforing/index.md).
 
@@ -67,7 +66,7 @@ bifogas dokumentet.
 |---|---|
 | Vem som registrerade en verifikation och när | Fälten *Skapad av* och *Skapad* på dokumentet, samt rapporten Grundbok |
 | Ändringar av dokument och inställningar | Dokumentets *Aktivitet* (ändringshistorik) |
-| Makuleringar | Motverifikationer i Grundbok och Bokföringsregister, och dokumentets status |
+| Makuleringar | Motverifikationer i Grundbok och Huvudbok, och dokumentets status |
 | Inloggningar | ERPNext:s *Aktivitetslogg* |
 | Ändringar i programvaran | Versionshistoriken på GitHub |
 
