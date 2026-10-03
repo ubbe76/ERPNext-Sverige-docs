@@ -56,14 +56,16 @@ Beloppen anges i hela kronor.
 
 **Redovisningsperiod:** ange bolagets period under **Redovisningsperiod för moms** på bolaget (Månad, Kvartal eller
 År, enligt Skatteverkets beslut). *År* är bolagets räkenskapsår, även om det är brutet. Rapporten öppnas med den
-senaste avslutade perioden, till exempel juli–september för den som redovisar per kvartal i oktober.
+senaste avslutade perioden, till exempel juli–september för den som redovisar per kvartal i oktober. Under
+bolagets första år, när det redovisar per år, öppnas rapporten med det pågående året.
 
 Rutorna kan visas för vilka datum som helst, men **Ladda ner eSKD-fil**, **Skapa momsomföring** och **Lås
 perioden** kräver en hel redovisningsperiod. Annars stoppas de med ett meddelande om rätt datum, eftersom
 Skatteverket avvisar en fil för en period som bolaget inte redovisar.
 
 - **Ladda ner eSKD-fil** ger en fil för Skatteverkets e-tjänst "Lämna momsdeklaration". Ladda upp den där,
-  kontrollera uppgifterna och signera. Organisationsnumret skrivs som xxxxxx-xxxx, som Skatteverket kräver.
+  kontrollera uppgifterna och signera. Organisationsnumret hämtas från bolagets **Tax ID** och skrivs som
+  xxxxxx-xxxx, som Skatteverket kräver.
 - **Skapa momsomföring** skapar en journalpost som utkast som nollställer momskontona mot 2650. Granska och
   bokför den själv.
 
