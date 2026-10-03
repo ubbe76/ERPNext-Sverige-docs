@@ -12,8 +12,15 @@ bench compile-po-to-mo --app erpnext_sverige --locale sv
 bench --site <site> clear-cache
 ```
 
-!!! info
-    Källkoden till ERPNext Sverige är ännu inte publik.
+Sätt sedan upp bolaget med svensk kontoplan, moms och brevhuvud. Det går att köra flera gånger utan att något
+dubbleras:
+
+```bash
+bench --site <site> execute erpnext_sverige.setup.company.setup_swedish_company --kwargs "{'company': '<bolag>'}"
+```
+
+Källkoden finns på GitHub: [ERPNext Sverige](https://github.com/ubbe76/ERPNext-Sverige) och
+[HRMS Sverige](https://github.com/ubbe76/HRMS-Sverige), båda under GPL-3.0.
 
 ## HRMS Sverige
 
