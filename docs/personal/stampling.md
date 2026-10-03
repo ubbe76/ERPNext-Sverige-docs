@@ -1,7 +1,7 @@
 # Stämpling
 
 Personalen stämplar in och ut på en gemensam surfplatta eller dator. De identifierar sig med anställningsnummer och
-en egen PIN-kod. Stämplingarna blir närvaro i ERPNext, och övertid och OB räknas ur dem i löneunderlaget.
+en egen PIN-kod, eller med bara anställningsnumret om HR har valt det. Stämplingarna blir närvaro i ERPNext, och övertid och OB räknas ur dem i löneunderlaget.
 
 ## För HR
 
@@ -19,13 +19,17 @@ vid första stämplingen. Har någon glömt sin kod sätter HR en ny på samma s
 
 Efter fem felaktiga försök låses anställningsnumret i 15 minuter.
 
+**Stämpla utan PIN:** bocka i **Stämpla utan PIN** på den anställde (under Stämpling). Den anställde stämplar då
+med bara anställningsnumret. Tänk på att vem som helst vid enheten då kan stämpla åt den anställde. Tar du bort
+bocken behöver den anställde en PIN-kod igen; sätt en med **Sätt PIN** om det inte redan finns en.
+
 ## För personalen
 
-1. Slå ditt anställningsnummer och tryck **OK**, sedan din PIN-kod och **OK**.
+1. Slå ditt anställningsnummer och tryck **OK**. Frågar sidan efter PIN-kod, slå den och tryck **OK**.
 2. Första gången väljer du en ny PIN-kod (4 till 6 siffror) och upprepar den.
 3. Tryck **Stämpla in** eller **Stämpla ut**. Sidan föreslår rätt knapp; den mindre knappen används om du glömt
    att stämpla förra gången.
-4. Har du jobbat mer än en kvart utanför ditt skift frågar sidan om du vill ha **pengar** eller **komptid** för
+4. Har du jobbat mer än en kvart utanför ditt skift (ett helgpass räknas helt) frågar sidan om du vill ha **pengar** eller **komptid** för
    övertiden.
 
 Glömt att stämpla? Säg till HR, som rättar närvaron i ERPNext.
