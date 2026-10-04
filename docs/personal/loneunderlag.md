@@ -6,8 +6,11 @@ skrivas in två gånger. Filen innehåller en månads godkända frånvaro, timav
 
 ## Förberedelser i ERPNext
 
-- **Anställningsnummer:** fyll i fältet *Anställningsnummer* på varje anställd. Det måste vara samma nummer som i
-  Crona, annars hittar Crona inte den anställde.
+- **Anställningsnummer:** fyll i fältet *Anställningsnummer* på varje anställd (fliken *Översikt*, avsnittet
+  *Bolagsdetaljer*). Det måste vara samma nummer som i Crona, annars hittar Crona inte den anställde.
+  Rekommendation: sätt **HR-inställningar > Namngivning av anställd efter** till *Employee Number*, så blir
+  anställningsnumret den anställdes ID och måste fyllas i. Vid bytet fyller ERPNext i ID:t (till exempel
+  HR-EMP-00001) som nummer på anställda som saknar ett; ändra dem till numret i Crona.
 - **Tidkoder:** varje frånvarotyp har en *PAXml-tidkod*. De svenska frånvarotyperna har koderna från början:
 
 | Frånvarotyp | PAXml-tidkod |
