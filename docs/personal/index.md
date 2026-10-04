@@ -24,7 +24,8 @@ företaget från 1 januari. Nästa års lista skapas under [Årsrutiner](../arsr
 
 ## Semester och frånvaro
 
-Frånvarotyperna är Semester, Sjukfrånvaro, VAB, Föräldraledighet, Tjänstledighet och Kompledighet.
+Frånvarotyperna är Semester, Sjukfrånvaro, VAB, Föräldraledighet, Tjänstledighet, Kompledighet och
+Arbetstidskonto (arbetstidsförkortning uttagen som ledighet, se [Skift och arbetstid](skift.md)).
 
 - Semester: 25 dagar per år. Högst 5 dagar per år får sparas, och de förfaller efter 5 år.
 - Vid deltid blir semestern 25 × arbetsdagar per vecka / 5, avrundat uppåt.

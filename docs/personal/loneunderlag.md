@@ -1,7 +1,8 @@
 # Löneunderlag till Crona Lön
 
-Frånvaron i ERPNext kan föras över till Crona Lön som en PAXml-fil, så att den inte behöver skrivas in två gånger.
-Filen innehåller den godkända frånvaron för en månad. Arbetad tid och tillägg ingår inte än.
+Frånvaro, arbetad tid och tillägg i ERPNext kan föras över till Crona Lön som en PAXml-fil, så att de inte behöver
+skrivas in två gånger. Filen innehåller en månads godkända frånvaro, timavlönades arbetade tid samt mertid,
+övertid och OB.
 
 ## Förberedelser i ERPNext
 
@@ -17,6 +18,7 @@ Filen innehåller den godkända frånvaron för en månad. Arbetad tid och till�
 | Föräldraledighet | FPE |
 | Tjänstledighet | TJL |
 | Kompledighet | KOM |
+| Arbetstidskonto | ATK |
 
 ## Förberedelser i Crona Lön
 
@@ -31,9 +33,11 @@ Filen innehåller den godkända frånvaron för en månad. Arbetad tid och till�
 Sätt **Löneform** till *Timlön* på anställda med timlön. För dem skickas:
 
 - **arbetad tid** som tidkod **ARB**, en rad per dag med de timmar som närvaron visar. Närvaron räknas fram av
-  HRMS från in- och utstämplingarna mot skiftet;
-- **frånvaro** i timmar per dag de var schemalagda (skifttilldelning eller standardskift). Helgdagar och dagar
-  utan skift räknas inte, och en halvdag ger halva skiftet.
+  HRMS från in- och utstämplingarna mot skiftet. Skiftets obetalda raster dras av även om de inte stämplats;
+- **frånvaro** i timmar per dag de var schemalagda (skifttilldelning eller standardskift), utan obetalda raster.
+  Helgdagar och dagar utan skift räknas inte, och en halvdag ger halva skiftet.
+
+Skift, raster och scheman som skiljer sig mellan veckodagarna beskrivs under [Skift och arbetstid](skift.md).
 
 Timavlönade behöver alltså inget schema i Crona. Koppla **ARB** till lönearten för timlön under
 **Register > Löneartsstyrning**, och kontrollera att frånvarokoderna har lönearter för timavlönade.
@@ -47,7 +51,8 @@ utstämpling. Rätta stämplingen eller markera närvaron för dagen, och hämta
 
 **Ställ in reglerna** under **Löneinställningar**:
 
-- **Heltid per dag** (standard 8 timmar) är gränsen för mertid.
+- **Heltid per dag** (standard 8 timmar) är gränsen för mertid. En dag som avviker, till exempel en kortare fredag,
+  ställs in under **Heltid per veckodag**.
 - **Tidsregler**: varje rad har typ (OB eller Övertid), nivå 1–5, dagar och klockslag. Till före Från går över
   midnatt, och Från = Till betyder hela dygnet. *Helgdag* är röda dagar i helglistan. Där regler överlappar gäller
   den högsta nivån.
@@ -62,7 +67,8 @@ utstämpling. Rätta stämplingen eller markera närvaron för dagen, och hämta
 
 **Så räknas det per dag:**
 
-- Tid utanför det planerade skiftet är extra tid. Raster mellan stämplingarna räknas inte.
+- Tid utanför det planerade skiftet är extra tid. Raster mellan stämplingarna och skiftets obetalda raster räknas
+  inte.
 - **Pass på helger och röda dagar** (lediga dagar i helglistan) är extra tid hela passet, för den som har ett
   skift. Ett extrapass på en lördag ger alltså både övertid och OB.
 - **Den som saknar skift** (ingen skifttilldelning och inget standardskift) har inget schema och får ingen

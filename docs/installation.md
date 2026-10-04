@@ -3,6 +3,8 @@
 Båda apparna installeras med [bench](https://github.com/frappe/bench) på en server där `frappe` och
 `erpnext` (branchen `version-16`) redan finns. Redis (kö och cache) måste vara igång under installationen.
 
+Senast testad med frappe 16.36.1, erpnext 16.37.0 och hrms 16.20.1 (2026-10-04).
+
 ## ERPNext Sverige
 
 ```bash
