@@ -1,10 +1,5 @@
 # Personal
 
-![HRMS Sverige](../assets/logo/hrms-sverige.svg#only-light){ width="320" }
-![HRMS Sverige](../assets/logo/hrms-sverige-dark.svg#only-dark){ width="320" }
-
-Avsnittet gäller appen **HRMS Sverige**.
-
 ## Anställda och personnummer
 
 Den anställde har fälten **Personnummer**, **Arbetsdagar per vecka** och **Sysselsättningsgrad**.
@@ -18,7 +13,7 @@ Den anställde har fälten **Personnummer**, **Arbetsdagar per vecka** och **Sys
 ## Helgdagslistor
 
 Helgdagslistan **Sverige ÅÅÅÅ** innehåller röda dagar samt midsommar-, jul- och nyårsafton, och kopplas till
-företaget från 1 januari. Nästa års lista skapas under [Årsrutiner](../arsrutiner.md).
+företaget från 1 januari. Nästa års lista skapas under [Helgdagar och semester varje år](helglistor.md).
 
 ![Helgdagslistan Sverige 2026](../assets/skarmbilder/personal/helgdagslista.png)
 
