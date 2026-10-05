@@ -12,6 +12,8 @@ Hur frakten ställs in och används beskrivs under [Frakt via Sendify](sendify.m
 
 ## Installera
 
+Installera fraktappen efter ERPNext Sverige. Hela ordningen finns under [Installation](../installation.md).
+
 ```bash
 bench get-app https://github.com/ubbe76/ERPNext-Sverige-Frakt --branch version-16
 bench --site <site> install-app erpnext_sverige_frakt

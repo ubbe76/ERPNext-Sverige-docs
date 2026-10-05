@@ -8,7 +8,7 @@ ERPNext:s egen kod. Källkoden finns på [GitHub](https://github.com/ubbe76/ERPN
 
 | Sida | Innehåll |
 |---|---|
-| [Installation](installation.md) | Installation, grunduppsättning av bolaget och backup |
+| [Installation och backup](installation.md) | Installation på en befintlig site, grunduppsättning av bolaget och backup |
 | [Bokföring och moms](bokforing.md) | BAS-kontoplan, momskategorier, automatiskt kontoval, momsdeklaration, grundbok och SIE |
 | [Fakturering](fakturering.md) | Fakturamallen, momsregistreringsnummer, OCR och fakturanummer utan luckor |
 | [Betalningar](betalningar.md) | Bankgiroinbetalningar (BgMax) och leverantörsbetalningar (pain.001) |

@@ -17,7 +17,8 @@ frånvaro, närvaro, skift och löneunderlag till lönesystemet. Lön räknas in
 
 ## Installation
 
-HRMS Sverige kräver Frappe HRMS och ska installeras **efter** den, så att de svenska översättningarna vinner.
+HRMS Sverige kräver Frappe HRMS och ska installeras **efter** den, så att de svenska översättningarna vinner. Hela
+ordningen, med installationsguiden och kontrollen efteråt, finns under [Installation](../installation.md).
 
 ```bash
 bench get-app hrms --branch version-16
