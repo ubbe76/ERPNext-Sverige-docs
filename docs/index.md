@@ -17,6 +17,7 @@ HRMS Sverige är fristående från de andra två. Frakten bygger på ERPNext Sve
 
 ## Innan du börjar
 
+- Installera apparna enligt [Installation](installation.md), i rätt ordning och före installationsguiden.
 - Välj språket **Svenska (sv)** under dina användarinställningar. Annars syns inte de svenska texterna.
 - Ladda om sidan utan webbläsarens cache efter att apparna har installerats eller uppdaterats. Annars
   kan webbläsaren visa gamla menyer och texter.

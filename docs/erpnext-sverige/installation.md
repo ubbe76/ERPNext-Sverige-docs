@@ -1,39 +1,23 @@
-# Installation
+# Installation och backup
 
-ERPNext Sverige installeras med [bench](https://github.com/frappe/bench) på en server där `frappe` och
-`erpnext` (branchen `version-16`) redan finns. Redis (kö och cache) måste vara igång under installationen.
+Hela installationen av alla tre apparna, från ny server till kontrollerad site, beskrivs steg för steg under
+[Installation](../installation.md). Där finns också uppdatering och felsökning.
 
-## Installera
+## Befintlig site
+
+Har ni redan en site med ERPNext och ett bolag med kontoplanen **BAS 2024 med Nummer** räcker det här. Redis
+(`bench start`) måste vara igång:
 
 ```bash
 bench get-app https://github.com/ubbe76/ERPNext-Sverige --branch version-16
 bench --site <site> install-app erpnext_sverige
-bench compile-po-to-mo --app erpnext_sverige --locale sv
+bench compile-po-to-mo --app erpnext_sverige --locale sv --force
 bench --site <site> clear-cache
-```
-
-Sätt sedan upp bolaget med svensk kontoplan, moms och brevhuvud. Det går att köra flera gånger utan att något
-dubbleras:
-
-```bash
 bench --site <site> execute erpnext_sverige.setup.company.setup_swedish_company --kwargs "{'company': '<bolag>'}"
 ```
 
-Ska ni boka frakt installerar ni därefter [ERPNext Sverige Frakt](../frakt/index.md).
-
-## Uppdatera
-
-```bash
-cd apps/erpnext_sverige && git pull && cd ../..
-bench --site <site> migrate
-bench compile-po-to-mo --app erpnext_sverige --locale sv
-bench --site <site> clear-cache
-```
-
-!!! warning "Uppgradering till 0.3.0 med frakt"
-    Frakten har flyttat till appen [ERPNext Sverige Frakt](../frakt/index.md#uppgradera-fran-erpnext-sverige-02).
-    Använder ni frakt måste fraktappen installeras **innan** siten migreras. Den som inte använder frakt behöver
-    inte göra något.
+Starta sedan om bench, se [steg 6](../installation.md#6-starta-om-och-tom-cachen). Vad grunduppsättningen
+ställer in beskrivs under [Bokföring och moms](bokforing.md#grunduppsattning).
 
 ## Backup
 

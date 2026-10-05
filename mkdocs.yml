@@ -41,7 +41,6 @@ plugins:
   # Gamla adresser från före kapitelindelningen per app (2026-10-05)
   - redirects:
       redirect_maps:
-        installation.md: erpnext-sverige/installation.md
         bokforing/index.md: erpnext-sverige/bokforing.md
         fakturering/index.md: erpnext-sverige/fakturering.md
         betalningar/index.md: erpnext-sverige/betalningar.md
@@ -64,9 +63,10 @@ markdown_extensions:
 
 nav:
   - Kom igång: index.md
+  - Installation: installation.md
   - ERPNext Sverige:
       - erpnext-sverige/index.md
-      - Installation: erpnext-sverige/installation.md
+      - Installation och backup: erpnext-sverige/installation.md
       - Bokföring och moms: erpnext-sverige/bokforing.md
       - Fakturering: erpnext-sverige/fakturering.md
       - Betalningar: erpnext-sverige/betalningar.md
