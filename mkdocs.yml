@@ -1,5 +1,5 @@
 site_name: ERPNext Sverige – manual
-site_description: Användarmanual för ERPNext Sverige och HRMS Sverige
+site_description: Användarmanual för ERPNext Sverige, ERPNext Sverige Frakt och HRMS Sverige
 site_url: https://ubbe76.github.io/ERPNext-Sverige-docs/
 repo_url: https://github.com/ubbe76/ERPNext-Sverige-docs
 edit_uri: edit/main/docs/
@@ -38,6 +38,19 @@ extra_css:
 plugins:
   - search:
       lang: sv
+  # Gamla adresser från före kapitelindelningen per app (2026-10-05)
+  - redirects:
+      redirect_maps:
+        installation.md: erpnext-sverige/installation.md
+        bokforing/index.md: erpnext-sverige/bokforing.md
+        fakturering/index.md: erpnext-sverige/fakturering.md
+        betalningar/index.md: erpnext-sverige/betalningar.md
+        arsrutiner.md: erpnext-sverige/bokslut-och-arkiv.md
+        systemdokumentation.md: erpnext-sverige/systemdokumentation.md
+        personal/index.md: hrms-sverige/personal.md
+        personal/loneunderlag.md: hrms-sverige/loneunderlag.md
+        personal/stampling.md: hrms-sverige/stampling.md
+        personal/skift.md: hrms-sverige/skift.md
 
 markdown_extensions:
   - admonition
@@ -51,15 +64,21 @@ markdown_extensions:
 
 nav:
   - Kom igång: index.md
-  - Installation: installation.md
-  - Bokföring och moms: bokforing/index.md
-  - Fakturering: fakturering/index.md
-  - Betalningar: betalningar/index.md
-  - Frakt: frakt/index.md
-  - Personal:
-      - personal/index.md
-      - Löneunderlag till Crona: personal/loneunderlag.md
-      - Stämpling: personal/stampling.md
-      - Skift och arbetstid: personal/skift.md
-  - Årsrutiner: arsrutiner.md
-  - Systemdokumentation: systemdokumentation.md
+  - ERPNext Sverige:
+      - erpnext-sverige/index.md
+      - Installation: erpnext-sverige/installation.md
+      - Bokföring och moms: erpnext-sverige/bokforing.md
+      - Fakturering: erpnext-sverige/fakturering.md
+      - Betalningar: erpnext-sverige/betalningar.md
+      - Bokslut och arkiv: erpnext-sverige/bokslut-och-arkiv.md
+      - Systemdokumentation: erpnext-sverige/systemdokumentation.md
+  - ERPNext Sverige Frakt:
+      - frakt/index.md
+      - Frakt via Sendify: frakt/sendify.md
+  - HRMS Sverige:
+      - hrms-sverige/index.md
+      - Personal: hrms-sverige/personal.md
+      - Skift och arbetstid: hrms-sverige/skift.md
+      - Löneunderlag till Crona: hrms-sverige/loneunderlag.md
+      - Stämpling: hrms-sverige/stampling.md
+      - Helgdagar och semester varje år: hrms-sverige/helglistor.md

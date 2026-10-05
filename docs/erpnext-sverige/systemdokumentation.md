@@ -13,7 +13,7 @@ specifika för ert företag fyller ni i en egen, intern kopia (se [Företagets u
 
 | Del | Beskrivning |
 |---|---|
-| Programvara | [ERPNext](https://erpnext.com) version 16 (Frappe Framework) med apparna ERPNext Sverige och, för personal, HRMS Sverige |
+| Programvara | [ERPNext](https://erpnext.com) version 16 (Frappe Framework) med apparna ERPNext Sverige och, i förekommande fall, ERPNext Sverige Frakt (frakt) och HRMS Sverige (personal) |
 | Databas | MariaDB. All räkenskapsinformation lagras i databasen; bilagor som filer på servern |
 | Åtkomst | Via webbläsare med personlig inloggning. Varje användare har roller som styr behörigheten |
 | Källkod och ändringar | Apparna utvecklas i git med versionshistorik på GitHub. Varje ändring görs i en egen pull request |
@@ -47,10 +47,10 @@ bifogas dokumentet.
 
 ## Löpande bokföring
 
-- **Grundbok** (registreringsordning): rapporten [Grundbok](bokforing/index.md) under *Svensk bokföring*.
+- **Grundbok** (registreringsordning): rapporten [Grundbok](bokforing.md) under *Svensk bokföring*.
 - **Huvudbok** (systematisk ordning): ERPNext:s rapporter *Huvudbok* (per konto) och *Saldobalans*.
 - **Kontoval och moms** sker automatiskt utifrån kundens eller leverantörens momskategori och artikelns
-  momssats, se [Bokföring och moms](bokforing/index.md).
+  momssats, se [Bokföring och moms](bokforing.md).
 
 ## Rättelser och skydd mot ändringar
 
@@ -77,7 +77,7 @@ Räkenskapsinformationen sparas i **7 år** efter räkenskapsårets slut (bokfö
 - Varje natt tas en krypterad backup av databas och bilagor som laddas upp till molnlagring utanför servern.
   Dagliga kopior sparas i 30 dagar och en kopia per månad i 8 år.
 - Efter bokslutet sparas ett **årsarkiv** med backup och SIE 4-fil, som aldrig raderas
-  (se [Årsrutiner](arsrutiner.md)).
+  (se [Bokslut och arkiv](bokslut-och-arkiv.md)).
 - Backupen krypteras med en lösenfras som förvaras i en lösenordshanterare.
 - Återställning beskrivs i ERPNext Sveriges README under *Backup och arkivering*.
 
